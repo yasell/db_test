@@ -1,0 +1,65 @@
+.swiper-container {
+	width: 100%;
+	min-height: 44.5rem;
+	margin-top: 4.5rem;
+	background: $gray url("../img/slide_1.jpg") center no-repeat;
+	background-size: cover;
+
+	@media (min-width: 770px) {
+		margin-top: 0;
+	}
+}
+
+.swiper-slide {
+	min-height: 100%;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #ffffff;
+	background: transparent;
+
+	.container {
+		padding: 5rem 1rem;
+		@media (min-width: $desktop) {
+			padding: 5rem 25rem 5rem 8rem;
+		}
+	}
+
+	span {
+		display: block;
+		max-width: 20rem;
+		padding: 1.5rem 1rem;
+		font: bold 1.6rem $font_2;
+		text-transform: uppercase;
+		background-color: $orange;
+	}
+	h1 {
+		margin: 1rem 0 2rem 0;
+		font: bold 3.5rem $font_2;
+		@include niceText;
+		@media (min-width: $tablet) {
+			font-size: 6rem;
+		}
+	}
+}
+
+.swiper-pagination {
+	bottom: 2rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	width: 1rem;
+	height: 1rem;
+	border: 1px solid $gray;
+	border-radius: 0;
+	background: transparent;
+	opacity: 1;
+
+	&:hover {
+		background: $gray_dark;
+	}
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	background: $orange;
+	border: none;
+}

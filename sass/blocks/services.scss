@@ -1,0 +1,73 @@
+.services {
+	border-bottom: 1px solid $gray_border;
+}
+
+.services__list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.services__item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 12rem;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $gray;
+		.services__link {text-decoration: none;}
+	}
+	@media (min-width: $mobile_full) {
+		flex: 1 0 auto;
+		max-width: 50%;
+	}
+	@media (min-width: $tablet) {
+		max-width: 32%;
+	}
+	@media (min-width: $desktop) {
+		max-width: 20%;
+	}
+}
+
+.services__link {
+	padding: 0 0 0 6.5rem;
+	font: bold 1.3rem $font_1;
+}
+
+.services__icon {
+	position: absolute;
+	top: 4rem;
+	left: 2rem;
+	display: block;
+	background: url("../img/icons_sprite.png") no-repeat;
+
+	&_project {
+		width: 27px;
+    height: 42px;
+    background-position: -180px -5px;
+	}
+	&_build {
+		width: 36px;
+    height: 37px;
+    background-position: -5px -5px;
+	}
+	&_expert {
+		width: 26px;
+    height: 36px;
+    background-position: -51px -5px;
+	}
+	&_serv {
+		width: 36px;
+    height: 34px;
+    background-position: -217px -5px;
+	}
+	&_lab {
+		width: 31px;
+    height: 40px;
+    background-position: -139px -5px;
+	}
+}

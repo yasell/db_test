@@ -1,0 +1,61 @@
+// base style
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font: 300 9px/1.33 $font_1;
+
+	@media (min-width: $tablet) {
+		font-size: 10px;
+	}
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+	height: 100%;
+  width: 100%;
+	min-height: 100%;
+	font: bold 1.3rem "Arial", sans-serif;
+	color: black;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $color_link;
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1rem auto;
+	font: bold 1rem $font_2;
+}
+
+h1 {font-size: 6rem;}
+h2 {font-size: 5rem;}
+h3 {font-size: 4rem;}
+h4 {font-size: 3rem;}
+h5 {font-size: 2rem;}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}

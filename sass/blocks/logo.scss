@@ -1,0 +1,32 @@
+.logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 20rem;
+	flex-shrink: 0;
+
+	@media (min-width: $mobile_full) {
+		max-width: 24rem;
+	}
+}
+
+.logo__img {
+	display: inline-block;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.logo__name {
+	padding: 1rem;
+	
+	span:first-child {
+		display: block;
+		font-size: 2.4rem;
+		color: $orange;
+	}
+	span:last-child {
+		font-size: 1.2rem;
+	}
+}

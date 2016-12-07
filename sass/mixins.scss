@@ -1,0 +1,31 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    line-height: 0;
+    clear: both;
+  }
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+	padding: 0 10px;
+
+  @media (min-width: $tablet) {
+    width: 700px;
+		max-width: none;
+		padding: 0;
+  }
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
+}
+
+// for nice text
+@mixin niceText($overflow: ellipsis) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}

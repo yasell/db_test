@@ -1,0 +1,31 @@
+.header__row {
+	position: relative;
+
+	&:first-child {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		min-height: 11rem;
+
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: block;
+			width: 3000px;
+			height: 1px;
+			margin: 0 -1500px 0 -1500px;
+			background-color: $gray_border;
+		}
+		
+		@media (min-width: $tablet) {
+			width: 700px;
+			margin: 0 auto;
+		}
+		@media (min-width: $desktop) {
+			width: 940px;
+		}
+	}
+}
