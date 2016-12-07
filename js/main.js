@@ -21,7 +21,4 @@ $(document).ready(function($) {
     autoplay: 7500,
     autoplayDisableOnInteraction: false
 	})
-
-	//developer funcitons
-	getAllClasses('html', '.elements_list');
 });
